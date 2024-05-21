@@ -1,0 +1,231 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size:medium;
+    font-weight:500;
+    /* text-transform: uppercase; */
+  }
+  
+  nav {
+    background-color: #222222;
+    color: white;
+    /* display: -ms-grid; */
+    display: grid;
+    /* -ms-grid-columns: 30% 60%; */
+        grid-template-columns: 30% 60%;
+    /* -webkit-column-gap: 10%; */
+            column-gap: 10%;
+    padding: 0% 5%;
+  }
+  
+  nav .array-inputs {
+    /* display: -ms-grid; */
+    display: grid;
+    /* -ms-grid-columns: 60% 40%; */
+        grid-template-columns: 60% 40%;
+    place-content: center;
+    padding: 5% 0%;
+  }
+  
+  nav .array-inputs #a_size {
+    padding: 5% 0%;
+  }
+  
+  nav .array-inputs #a_speed {
+    padding: 5% 0%;
+  }
+  
+  nav .array-inputs #a_generate {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 4% 0% 0% 0%;
+    padding-left: 20%;
+  }
+  
+  nav .array-inputs #a_generate:hover {
+    cursor: pointer;
+  }
+  
+  nav .header_right {
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
+    display: flex;
+    /* -webkit-box-orient: vertical;
+    -webkit-box-direction: normal; */
+        /* -ms-flex-direction: column; */
+            flex-direction: column;
+  }
+  
+  nav .header_right .nav-heading {
+    display: inline-block;
+    font-size:xxx-large;
+    padding: 3% 0%;
+  }
+  
+  nav .header_right .algos {
+    /* display: -ms-grid; */
+    display: grid;
+    /* -ms-grid-columns: (16.66667%)/*[6]*/; 
+        grid-template-columns: repeat(6, 16.66667%);
+    place-content: center;
+    padding: 2% 0%;
+  }
+  
+  nav .header_right .algos button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    padding: 5% 0%;
+    font-size: x-large;
+  }
+  
+  nav .header_right .algos button:hover {
+    background-color: rgb(94, 94, 96);
+    cursor: pointer;
+  }
+  
+  nav .header_right .algos .butt_locked {
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  nav .header_right .algos .butt_locked:hover {
+    /* when button is locked and then we are hovering */
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  nav .header_right .algos .butt_selected {
+    background-color: white;
+    color: green;
+  }
+  
+  nav .header_right .algos .butt_selected:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  nav .header_right .algos .butt_unselected:hover {
+    background-color: rgb(94, 94, 96);
+    cursor: pointer;
+  }
+  
+  section {
+    /* display: -ms-grid; */
+    display: grid;
+    /* -ms-grid-columns: 20% 60% 20%; */
+        grid-template-columns: 20% 60% 20%;
+  }
+  
+  section .Complexity_Containers {
+    margin-top: 20%;
+  }
+  
+  section .Complexity_Containers .Pair_Definitions {
+    margin-top: 20%;
+  }
+  
+  section .Complexity_Containers .Pair_Definitions p {
+    display: inline;
+  }
+  
+  section .Complexity_Containers .Pair_Definitions p.Sub_Heading {
+    font-size: medium;
+    text-transform: none;
+  }
+  
+  section #Info_Cont1 {
+    padding: 20% 10%;
+  }
+  
+  section #Info_Cont1 h3 {
+    text-decoration: underline;
+  }
+  
+  section #array_container {
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
+    display: flex;
+    width: 100%;
+    height: 70vh;
+  }
+  
+  section #Info_Cont2 {
+    padding: 20% 10%;
+  }
+  
+  section #Info_Cont2 h3 {
+    text-decoration: underline;
+  }
+  
+  .hide {
+    display: none;
+  }
+
+
+@media (max-width: 480px) {
+    
+    section {
+        display: grid;
+            grid-template-columns: 30% 37% 30%;
+      }
+
+      section #Info_Cont2 {
+        padding: 420% 31% 0% 0%;
+      }
+
+      section #Info_Cont1 {
+        padding: 420% 0% 14% 30%;
+      }
+
+      section #array_container {
+        display: flex;
+        width: 100%;
+        height: 60vh;
+      }
+    nav {
+        grid-template-columns: 100%; /* Adjust navigation vertically */
+      }
+    
+      nav .header_right .algos {
+        grid-template-columns: repeat(2, 50%); /* Show 2 buttons per row in algorithm section */
+        gap: 2px; 
+      }
+    
+      nav .header_right .nav-heading {
+        font-size: large; /* Decrease the font size for the navigation heading */
+      }
+    
+      nav .header_right .algos button {
+        padding: 0% 0%; /* Adjust button padding for smaller screens */
+        font-size: medium; 
+      }
+  }
+  
+  
+  /* @media (min-width: 481px) and (max-width: 1250px)//Tablets
+  {
+  
+  }
+  
+  @media (min-width: 1251px)//Laptops and up
+  {
+  
+  } */
+
+
+
+
+  /* {
+    "version": 3,
+    "mappings": "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",
+    "sources": [
+        "../Sorting_Visualizer/style.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+} */
